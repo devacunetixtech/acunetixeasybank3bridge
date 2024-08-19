@@ -19,14 +19,14 @@
   </style>
 </head>
 <body>
-  <nav class="bg-white shadow-lg">
+  <nav class="bg-white shadow-lg z-50 relative">
     <div class="container mx-auto px-6 py-3">
       <div class="flex justify-between items-center">
         <div>
           <img src="./images/logo.svg" alt="Easybank" class="h-8">
         </div>
         <div class="hidden md:flex space-x-6">
-          <a href="#" class="text-gray-600 hover:text-gray-700">Homee</a>
+          <a href="#" class="text-gray-600 hover:text-gray-700">Home</a>
           <a href="#" class="text-gray-600 hover:text-gray-800">About Us</a>
           <a href="#" class="text-gray-600 hover:text-gray-800">Blog</a>
           <a href="#" class="text-gray-600 hover:text-gray-800">Careers</a>
@@ -50,24 +50,36 @@
       <a href="#" class="block px-4 py-2 text-sm text-gray-700">Contact</a>
     </div>
   </nav>
-
+  
   <!-- Hero Section -->
-  <section class="bg-gray-100 flex items-center min-h-[80%] w-full">
-    <div class="container mx-auto flex flex-col-reverse md:flex-row items-center px-4">
-      <div class="md:w-1/2 md:text-left">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Next generation digital banking</h1>
-        <p class="text-gray-600 mb-6">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-        <a href="#" class="bg-green-400 text-white py-2 px-6 rounded-full hover:bg-green-600">Request Invite</a>
-      </div>
-      <div class="md:w-1/2 w-full">
-        <img src="./images/bg-intro-desktop.svg" alt="Hero Image" class="w-full object-cover">
+  <section class="px-2 bg-white relative overflow-hidden">
+    <div class="container max-w-6xl px-8 mx-auto xl:px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <!-- Left Side -->
+        <div class="order-2 md:order-1 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9">
+          <h1 class="md:text-5xl text-4xl text-gray-600 mb-4">Next generation <br> digital banking</h1>
+          <p class="text-gray-600 pb-10">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+          <a href="#" class="bg-green-400 text-white py-3 px-6 rounded-full hover:bg-green-600">Request Invite</a>
+        </div>
+  
+        <!-- Right Side -->
+        <div class="w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] order-1 md:order-2 relative">
+          <img src="./images/bg-intro-desktop.svg" alt="Hero Image" class="max-w-5xl h-full object-cover -mt-48 z-0">
+          <img src="./images/image-mockups.png" alt="Overlay Image" class="absolute inset-0 max-w-2xl h-[150px] md:w-[200px] md:h-[200px]  object-contain -mt-28">
+        </div>
+
+
       </div>
     </div>
   </section>
+  
+  
+  
+  
 
   <!-- Features Section -->
-  <section class="py-16 bg-white mx-2">
-    <div class="container mx-auto px-6 pt-5 pb-6">
+  <section class="pb-16 pt-8 bg-white mx-2 z-50">
+    <div class="container mx-auto px-6 pb-6">
       <div class="mb-12">
         <p class="text-4xl text-gray-600 text-center md:text-left mb-5">Why choose Easybank?</p>
         <p class="text-gray-400 text-center md:text-left">We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
